@@ -7,10 +7,6 @@ export default function Home() {
       <main className="flex flex-col items-center gap-8 bg-white rounded-2xl max-w-screen-sm mx-auto h-[24rem] p-8">
         <h1 className="font-bold text-2xl">Zukit Example</h1>
         <div className="flex flex-row gap-8 items-baseline">
-          {/* {(zupass.status === "logged-out" || !zupass.anonymous) && (
-            <ZupassLoginButton />
-          )}
-          {zupass.status === "logged-out" && <span>or</span>} */}
           {(zupass.status === "logged-out" || zupass.anonymous) && (
             <ZupassLoginButton anonymous />
           )}
